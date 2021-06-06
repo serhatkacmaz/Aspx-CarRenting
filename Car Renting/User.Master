@@ -5,6 +5,8 @@
 <html>
 <head runat="server">
     <title></title>
+    <link href="StyleSheet.css" rel="stylesheet" />
+
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <style type="text/css">
@@ -31,7 +33,7 @@
                     <td class="auto-style2"><a href="customerAdd.aspx">MÜŞTERİ EKLEME</a></td>
                     <td class="auto-style2"><a href="customerDisplay.aspx">MÜŞTERİ LİSTELEME</a></td>
                     <td class="auto-style2"><a href="carRecord.aspx">YENİ ARAÇ KAYIT</a></td>
-                    <td class="auto-style2"><a href="carRecord.aspx">ARAÇ LİSTELEME</a></td>
+                    <td class="auto-style2"><a href="carDisplay.aspx">ARAÇ LİSTELEME</a></td>
                 </tr>
             </table>
         </div>
@@ -41,7 +43,7 @@
         <div style="margin-left: 300px; height: 300px; width: 700px;">
 
             <%-- Kategoriler --%>
-            <div style="height: auto; float: left; width: 200px; background-color: #ce7171;"></div>
+            <div style="height: 200px; float: left; width: 200px; background-color: #ce7171;"></div>
 
             <%-- Frame --%>
             <div style="height: auto; float: left; margin-left: 50px; width: 450px; background-color: #ce7171;">
