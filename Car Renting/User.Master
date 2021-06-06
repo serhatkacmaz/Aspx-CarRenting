@@ -11,6 +11,7 @@
         .auto-style1 {
             width: 100%;
         }
+
         .auto-style2 {
             height: 23px;
         }
@@ -27,22 +28,22 @@
         <div style="margin-left: 300px; width: 700px; height: 40px; background-color: #fff;">
             <table class="auto-style1">
                 <tr>
-                    <td class="auto-style2">MÜŞTERİ EKLEME</td>
-                    <td class="auto-style2">MÜŞTERİ LİSTELEME</td>
-                    <td class="auto-style2">YENİ ARAÇ KAYIT</td>
-                    <td class="auto-style2">ARAÇ LİSTELEME</td>
+                    <td class="auto-style2"><a href="customerAdd.aspx">MÜŞTERİ EKLEME</a></td>
+                    <td class="auto-style2"><a href="customerDisplay.aspx">MÜŞTERİ LİSTELEME</a></td>
+                    <td class="auto-style2"><a href="carRecord.aspx">YENİ ARAÇ KAYIT</a></td>
+                    <td class="auto-style2"><a href="carRecord.aspx">ARAÇ LİSTELEME</a></td>
                 </tr>
             </table>
         </div>
         <div style="margin-left: 300px; height: 20px; width: 700px">&nbsp;</div>
 
-         <%-- Govde --%>
+        <%-- Govde --%>
         <div style="margin-left: 300px; height: 300px; width: 700px;">
 
-             <%-- Kategoriler --%>
+            <%-- Kategoriler --%>
             <div style="height: auto; float: left; width: 200px; background-color: #ce7171;"></div>
 
-             <%-- Frame --%>
+            <%-- Frame --%>
             <div style="height: auto; float: left; margin-left: 50px; width: 450px; background-color: #ce7171;">
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
                 </asp:ContentPlaceHolder>
