@@ -42,11 +42,10 @@
 
         <%-- Govde --%>
 
-            <%-- Frame --%>
-            <div style="height: auto; float: left; margin-left: 300px; width: 700px; background-color: #ce7171;">
-                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
-                </asp:ContentPlaceHolder>
-            </div>
+        <div style="height: auto; float: left; margin-left: 300px; width: 700px; background-color: #ce7171;">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
 
     </form>
 </body>
