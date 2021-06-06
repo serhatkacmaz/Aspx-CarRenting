@@ -67,13 +67,52 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="carDisplay.aspx" />
+    <Content Include="carRecord.aspx" />
+    <Content Include="customerAdd.aspx" />
+    <Content Include="customerDisplay.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="carDisplay.aspx.cs">
+      <DependentUpon>carDisplay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="carDisplay.aspx.designer.cs">
+      <DependentUpon>carDisplay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="carRecord.aspx.cs">
+      <DependentUpon>carRecord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="carRecord.aspx.designer.cs">
+      <DependentUpon>carRecord.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="customerAdd.aspx.cs">
+      <DependentUpon>customerAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="customerAdd.aspx.designer.cs">
+      <DependentUpon>customerAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="customerDisplay.aspx.cs">
+      <DependentUpon>customerDisplay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="customerDisplay.aspx.designer.cs">
+      <DependentUpon>customerDisplay.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User.Master.cs">
+      <DependentUpon>User.Master</DependentUpon>
+    </Compile>
+    <Compile Include="User.Master.designer.cs">
+      <DependentUpon>User.Master</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="User.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
