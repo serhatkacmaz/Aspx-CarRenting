@@ -9,3 +9,9 @@ a:hover {
     font-size =18pt;
     color: cadetblue;
 }
+
+.button{
+    background-color:#0094ff;
+    color:#fff;
+    font-size:14pt;
+}

@@ -16,6 +16,7 @@
 
         .auto-style2 {
             height: 23px;
+            text-align: center;
         }
     </style>
 </head>
