@@ -43,12 +43,23 @@
             text-align: center;
             height: 30px;
         }
+        .auto-style12 {
+            height: 23px;
+            text-align: center;
+        }
+        .auto-style13 {
+            text-align: center;
+            height: 26px;
+        }
+        .auto-style14 {
+            height: 26px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
     <table class="auto-style1">
     <tr>
-        <td class="auto-style5"><strong>TC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AD SOYAD&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TELEFON&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MAİL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ADRES</strong></td>
+        <td class="auto-style5"><strong>TC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AD SOYAD&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TELEFON&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MAİL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ADRES</strong></td>
     </tr>
     <tr>
         <td class="auto-style6">
@@ -89,7 +100,7 @@
                 <tr>
                     <td class="auto-style7">TC ARA</td>
                     <td>
-                        <asp:TextBox ID="TextBox1" runat="server" TextMode="Search" Width="200px"></asp:TextBox>
+                        <asp:TextBox ID="text_identity" runat="server" TextMode="Search" Width="200px"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
@@ -106,14 +117,14 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style2">SOYAD</td>
+                    <td class="auto-style12">SOYAD</td>
                     <td class="auto-style9">
                         <asp:TextBox ID="txt_surname" runat="server" Width="200px"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style7">TELEFON</td>
-                    <td>
+                    <td class="auto-style13">TELEFON</td>
+                    <td class="auto-style14">
                         <asp:TextBox ID="txt_phone" runat="server" Width="200px"></asp:TextBox>
                     </td>
                 </tr>

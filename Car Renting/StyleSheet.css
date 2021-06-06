@@ -1,17 +1,21 @@
-﻿a:link {
+﻿.menu:link {
     text-decoration: none;
-    font-size =14pt;
+    font-size: 12pt;
     font-family: 'Segoe UI';
     font-style: normal;
 }
 
-a:hover {
-    font-size =18pt;
+.menu:hover {
+    font-size: 13pt;
     color: cadetblue;
 }
 
-.button{
-    background-color:#0094ff;
-    color:#fff;
-    font-size:14pt;
+.button {
+    background-color: #0094ff;
+    color: #fff;
+    font-size: 14pt;
+}
+
+#btn_carRegister {
+    margin-right: 5px;
 }

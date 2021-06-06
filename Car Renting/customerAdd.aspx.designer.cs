@@ -42,6 +42,15 @@ namespace Car_Renting
         protected global::System.Web.UI.WebControls.TextBox txt_surname;
 
         /// <summary>
+        /// txt_birthday control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txt_birthday;
+
+        /// <summary>
         /// txt_phone control.
         /// </summary>
         /// <remarks>
@@ -60,6 +69,15 @@ namespace Car_Renting
         protected global::System.Web.UI.WebControls.TextBox txt_mail;
 
         /// <summary>
+        /// txt_licenceNo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txt_licenceNo;
+
+        /// <summary>
         /// txt_address control.
         /// </summary>
         /// <remarks>
@@ -69,12 +87,12 @@ namespace Car_Renting
         protected global::System.Web.UI.WebControls.TextBox txt_address;
 
         /// <summary>
-        /// btn_record_customer control.
+        /// btn_recordCustomer control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_record_customer;
+        protected global::System.Web.UI.WebControls.Button btn_recordCustomer;
     }
 }

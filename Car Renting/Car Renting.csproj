@@ -71,6 +71,7 @@
     <Content Include="carRecord.aspx" />
     <Content Include="customerAdd.aspx" />
     <Content Include="customerDisplay.aspx" />
+    <Content Include="homePage.aspx" />
     <Content Include="StyleSheet.css" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -102,6 +103,13 @@
     </Compile>
     <Compile Include="customerDisplay.aspx.designer.cs">
       <DependentUpon>customerDisplay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="homePage.aspx.cs">
+      <DependentUpon>homePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="homePage.aspx.designer.cs">
+      <DependentUpon>homePage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="User.Master.cs">

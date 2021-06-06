@@ -38,15 +38,27 @@
             </td>
         </tr>
         <tr>
+            <td class="auto-style4"><strong>DOĞUM TARİHİ</strong></td>
+            <td class="auto-style3">
+                <asp:TextBox ID="txt_birthday" runat="server" TextMode="DateTime" Width="200px"></asp:TextBox>
+            </td>
+        </tr>
+        <tr>
             <td class="auto-style4"><strong>TELEFON</strong></td>
             <td class="auto-style3">
                 <asp:TextBox ID="txt_phone" runat="server" TextMode="Phone" ToolTip="Telefofon Numarası Girin" Width="200px"></asp:TextBox>
             </td>
         </tr>
         <tr>
-            <td class="auto-style4"><strong>E</strong> <strong>MAİL</strong></td>
-            <td class="auto-style5">
+            <td class="auto-style4"><strong>E-MAİL</strong></td>
+            <td class="auto-style3">
                 <asp:TextBox ID="txt_mail" runat="server" TextMode="Email" ToolTip="Email Adresi Girin" Width="200px"></asp:TextBox>
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style4"><strong>EHLİYET BELGE NO</strong></td>
+            <td class="auto-style5">
+                <asp:TextBox ID="txt_licenceNo" runat="server" Width="200px"></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -58,7 +70,7 @@
         <tr>
             <td class="auto-style4">&nbsp;</td>
             <td class="auto-style5">
-                <asp:Button ID="btn_record_customer" runat="server" CssClass="button" OnClick="btn_record_customer_Click" Text="Kaydet" ToolTip="Kayıt Etmek için Tıkla" Width="120px" />
+                <asp:Button ID="btn_recordCustomer" runat="server" CssClass="button" OnClick="btn_record_customer_Click" Text="Kaydet" ToolTip="Kayıt Etmek için Tıkla" Width="120px" />
             </td>
         </tr>
     </table>

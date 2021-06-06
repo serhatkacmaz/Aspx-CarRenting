@@ -24,13 +24,13 @@ namespace Car_Renting
         protected global::System.Web.UI.WebControls.DataList DataList1;
 
         /// <summary>
-        /// TextBox1 control.
+        /// text_identity control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox text_identity;
 
         /// <summary>
         /// txt_name control.
