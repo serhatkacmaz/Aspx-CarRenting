@@ -46,7 +46,7 @@
         <tr>
             <td class="auto-style4"><strong>TELEFON</strong></td>
             <td class="auto-style3">
-                <asp:TextBox ID="txt_phone" runat="server" TextMode="Phone" ToolTip="Telefofon Numarası Girin" Width="200px"></asp:TextBox>
+                <asp:TextBox ID="txt_phone" runat="server" TextMode="Phone" ToolTip="Telefofon Numarası Girin" Width="200px" MaxLength="11"></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -58,7 +58,7 @@
         <tr>
             <td class="auto-style4"><strong>EHLİYET BELGE NO</strong></td>
             <td class="auto-style5">
-                <asp:TextBox ID="txt_licenceNo" runat="server" Width="200px"></asp:TextBox>
+                <asp:TextBox ID="txt_licenceNo" runat="server" Width="200px" MaxLength="6"></asp:TextBox>
             </td>
         </tr>
         <tr>

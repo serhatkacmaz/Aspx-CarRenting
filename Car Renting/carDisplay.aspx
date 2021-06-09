@@ -87,18 +87,18 @@
                                     <asp:Label ID="Label6" runat="server" Text='<%# Eval("renk") %>'></asp:Label>
                                 </td>
                                 <td class="auto-style14">
-                                    <asp:Label ID="Label7" runat="server" Text='<%# Eval("kM") %>'></asp:Label>
+                                    <asp:Label ID="Label7" runat="server" Text='<%# Eval("km") %>'></asp:Label>
                                 </td>
                                 <td class="auto-style13">
                                     <asp:Label ID="Label8" runat="server" Text='<%# Eval("yakit") %>'></asp:Label>
                                 </td>
                                 <td class="auto-style12">
-                                    <asp:Label ID="Label9" runat="server" Text='<%# Eval("kiraUcreti") %>'></asp:Label>
+                                    <asp:Label ID="Label9" runat="server" Text='<%# Eval("kiraUcret") %>'></asp:Label>
                                 </td>
                                 <td class="auto-style9">
-                                    <asp:Button ID="Button3" runat="server" Text="Tarihçe" Width="70px" />
-                                    <asp:Button ID="Button2" runat="server" Text="Düzenle" Width="70px" />
-                                    <asp:Button ID="Button1" runat="server" Text="Silme" Width="70px"/>
+                                    <asp:Button ID="btn_history" runat="server" Text="Tarihçe" Width="70px" OnClick="btn_history_Click" />
+                                    <asp:Button ID="btn_edit" runat="server" Text="Düzenle" Width="70px" />
+                                    <asp:Button ID="btn_delete" runat="server" Text="Silme" Width="70px"/>
                                 
                             </tr>
                         </table>

@@ -12,15 +12,20 @@ namespace Car_Renting
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            SqlConnection baglanti = new SqlConnection(System.Web.Configuration.WebConfigurationManager.ConnectionStrings["MsSql"].ConnectionString);
-            SqlCommand listeleKomutu = new SqlCommand("SELECT * FROM vehicles", baglanti);
-            baglanti.Open();
-            SqlDataReader listele = listeleKomutu.ExecuteReader();
-            DataList1.DataSource = listele;
+            SqlConnection sqlconnection = new SqlConnection(System.Web.Configuration.WebConfigurationManager.ConnectionStrings["MsSql"].ConnectionString);
+            SqlCommand command = new SqlCommand("SELECT * FROM Araba", sqlconnection);
+            sqlconnection.Open();
+            SqlDataReader display = command.ExecuteReader();
+            DataList1.DataSource = display;
             DataList1.DataBind();
-            baglanti.Close();
-            listeleKomutu.Dispose();
-            baglanti.Dispose();
+            sqlconnection.Close();
+            command.Dispose();
+            sqlconnection.Dispose();
+        }
+
+        protected void btn_history_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
