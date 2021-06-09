@@ -24,7 +24,7 @@ namespace Car_Renting
             command.Parameters.AddWithValue("@t1", txt_identity.Text);
             command.Parameters.AddWithValue("@t2", txt_name.Text);
             command.Parameters.AddWithValue("@t3", txt_surname.Text);
-            command.Parameters.AddWithValue("@t4", txt_birthday.Text);
+            command.Parameters.AddWithValue("@t4", txt_birthday.SelectedDate);
             command.Parameters.AddWithValue("@t5", txt_phone.Text);
             command.Parameters.AddWithValue("@t6", txt_mail.Text);
             command.Parameters.AddWithValue("@t7", txt_licenceNo.Text);

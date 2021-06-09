@@ -40,7 +40,7 @@
         <tr>
             <td class="auto-style4"><strong>DOĞUM TARİHİ</strong></td>
             <td class="auto-style3">
-                <asp:TextBox ID="txt_birthday" runat="server" TextMode="DateTime" Width="200px"></asp:TextBox>
+                <asp:Calendar ID="txt_birthday" runat="server"></asp:Calendar>
             </td>
         </tr>
         <tr>
