@@ -31,7 +31,9 @@
     <form id="form1" runat="server">
 
         <%-- Resim --%>
-        <div style="height: 150px; width: 1200px; margin-left: 300px; background-color: #ce7171;"></div>
+        <div style="height: 300px; width: 1200px; margin-left: 300px; background-color: #ce7171;">
+            <asp:Image ID="Image1" runat="server" Height="300px" Width="1200px" ImageUrl="~/Resimler/logo.jpg" />
+        </div>
         <div style="margin-left: 300px; height: 20px; width: 700px">&nbsp;</div>
 
         <%-- Menu Panel --%>

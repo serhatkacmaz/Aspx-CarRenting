@@ -71,7 +71,9 @@
     <Content Include="carRecord.aspx" />
     <Content Include="customerAdd.aspx" />
     <Content Include="customerDisplay.aspx" />
+    <Content Include="customerUpdateForm.aspx" />
     <Content Include="homePage.aspx" />
+    <Content Include="Resimler\logo.jpg" />
     <Content Include="StyleSheet.css" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -103,6 +105,13 @@
     </Compile>
     <Compile Include="customerDisplay.aspx.designer.cs">
       <DependentUpon>customerDisplay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="customerUpdateForm.aspx.cs">
+      <DependentUpon>customerUpdateForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="customerUpdateForm.aspx.designer.cs">
+      <DependentUpon>customerUpdateForm.aspx</DependentUpon>
     </Compile>
     <Compile Include="homePage.aspx.cs">
       <DependentUpon>homePage.aspx</DependentUpon>
