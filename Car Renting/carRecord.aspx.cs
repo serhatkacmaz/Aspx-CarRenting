@@ -48,6 +48,12 @@ namespace Car_Renting
             command.Parameters.AddWithValue("@t8", DropDown_fuel.Text);
             command.Parameters.AddWithValue("@t9", txt_rentPrices.Text);
             command.ExecuteNonQuery();
+            SqlCommand command2 = new SqlCommand("insert into kiraDurum (plaka,marka,model) values(@a1,@a2,@a3)", sqlconnection);
+            command2.Parameters.AddWithValue("@a1", txt_licencePlate.Text);
+            command2.Parameters.AddWithValue("@a2", txt_brand.Text);
+            command2.Parameters.AddWithValue("@a3", txt_model.Text);
+            command2.ExecuteNonQuery();
+
             sqlconnection.Close();
 
             Response.Write("Araba Kayıt Eklendi.");

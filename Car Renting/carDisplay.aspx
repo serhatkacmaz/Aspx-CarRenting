@@ -9,7 +9,7 @@
         width: 694px;
     }
         .auto-style17 {
-            width: 1071px;
+            width: 1081px;
             color: #0099CC;
             font-size: small;
         }

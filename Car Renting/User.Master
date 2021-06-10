@@ -25,16 +25,25 @@
             color: #0000FF;
             width: 165px;
         }
+        .auto-style4 {
+            text-align: center;
+        }
+        .auto-style5 {
+            text-align: center;
+            width: 1694px;
+        }
         </style>
 </head>
 <body>
     <form id="form1" runat="server">
 
+        <div class="auto-style4">
+
         <%-- Resim --%>
         <div style="height: 300px; width: 1200px; margin-left: 300px; background-color: #ce7171;">
             <asp:Image ID="Image1" runat="server" Height="300px" Width="1200px" ImageUrl="~/Resimler/logo.jpg" />
         </div>
-        <div style="margin-left: 300px; height: 20px; width: 700px">&nbsp;</div>
+        <div style="margin-left: 300px; height: 20px; width: 700px" class="auto-style4">&nbsp;</div>
 
         <%-- Menu Panel --%>
         <div style="margin-left: 300px; width: 1200px; height: 40px; background-color: #fff;">
@@ -48,15 +57,21 @@
                 </tr>
             </table>
         </div>
-        <div style="margin-left: 300px; height: 20px; width: 750px">&nbsp;</div>
+        <div style="margin-left: 300px; height: 20px; width: 750px" class="auto-style4">&nbsp;</div>
+
+
+            <div class="auto-style5">
 
 
         <%-- Govde --%>
         <div style="height: auto; float: left; margin-left: 300px; width: 1200px; background-color: #ce7171;">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
-                <p>
+                <p class="auto-style4">
                     &nbsp;</p>
             </asp:ContentPlaceHolder>
+        </div>
+
+            </div>
         </div>
 
     </form>
