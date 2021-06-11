@@ -76,6 +76,9 @@
     <Content Include="Resimler\logo.jpg" />
     <Content Include="StyleSheet.css" />
     <Content Include="Web.config" />
+    <Content Include="rentStatus.aspx">
+      <BrowseToURL>rentStatus.aspx</BrowseToURL>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="carDisplay.aspx.cs">
@@ -127,6 +130,13 @@
     </Compile>
     <Compile Include="User.Master.designer.cs">
       <DependentUpon>User.Master</DependentUpon>
+    </Compile>
+    <Compile Include="rentStatus.aspx.cs">
+      <DependentUpon>rentStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="rentStatus.aspx.designer.cs">
+      <DependentUpon>rentStatus.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

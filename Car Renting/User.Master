@@ -11,7 +11,7 @@
     </asp:ContentPlaceHolder>
     <style type="text/css">
         .auto-style1 {
-            width: 100%;
+            width: 1200px;
         }
 
         .auto-style2 {
@@ -25,12 +25,19 @@
             color: #0000FF;
             width: 165px;
         }
-        .auto-style4 {
-            text-align: center;
+        
+        .auto-style6 {
+            background-color: #808080;
         }
-        .auto-style5 {
+        .auto-style7 {
+            height: 20px;
+            width: 1200px;
+        }
+        .auto-style8 {
+            height: 23px;
             text-align: center;
-            width: 1694px;
+            color: #0000FF;
+            width: 276px;
         }
         </style>
 </head>
@@ -40,39 +47,38 @@
         <div class="auto-style4">
 
         <%-- Resim --%>
-        <div style="height: 300px; width: 1200px; margin-left: 300px; background-color: #ce7171;">
+        <div style="height: 300px; width: 1200px; margin: auto; background-color: #ce7171;">
             <asp:Image ID="Image1" runat="server" Height="300px" Width="1200px" ImageUrl="~/Resimler/logo.jpg" />
         </div>
-        <div style="margin-left: 300px; height: 20px; width: 700px" class="auto-style4">&nbsp;</div>
+        <div style="margin: auto; height: 20px; width: 1200px" class="auto-style4">&nbsp;</div>
 
         <%-- Menu Panel --%>
-        <div style="margin-left: 300px; width: 1200px; height: 40px; background-color: #fff;">
+        <div style="margin: auto; width: 1200px; height: 40px; background-color: #fff;">
             <table class="auto-style1">
                 <tr>
                     <td class="auto-style2"><a href="homePage.aspx" class="menu">ANA SAYFA</a></td>
                     <td class="auto-style2"><a href="customerAdd.aspx" class="menu">MÜŞTERİ EKLEME</a></td>
                     <td class="auto-style3"><a href="customerDisplay.aspx" class="menu">MÜŞTERİ LİSTELEME</a></td>
-                    <td class="auto-style2"><a href="carRecord.aspx" class="menu">YENİ ARAÇ KAYIT</a></td>
+                    <td class="auto-style8"><a href="carRecord.aspx" class="menu">YENİ ARAÇ KAYIT</a></td>
                     <td class="auto-style2"><a href="carDisplay.aspx" class="menu">ARAÇ LİSTELEME</a></td>
                 </tr>
             </table>
         </div>
-        <div style="margin-left: 300px; height: 20px; width: 750px" class="auto-style4">&nbsp;</div>
+        <div style="margin: auto; " class="auto-style7">&nbsp;</div>
 
 
-            <div class="auto-style5">
+            
 
 
         <%-- Govde --%>
-        <div style="height: auto; float: left; margin-left: 300px; width: 1200px; background-color: #ce7171;">
+        <div style="height: auto;  margin: auto; width: 1200px; " class="auto-style6">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
-                <p class="auto-style4">
-                    &nbsp;</p>
+               
             </asp:ContentPlaceHolder>
         </div>
 
             </div>
-        </div>
+        
 
     </form>
 </body>

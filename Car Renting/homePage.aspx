@@ -4,6 +4,7 @@
         .auto-style5 {
             text-align: center;
             width: 1218px;
+            height: 31px;
         }
         .auto-style6 {
             width: 1218px;
@@ -19,16 +20,17 @@
             text-align: left;
             height: 23px;
             width: 186px;
-            border:1px solid gray;
+            border:1px solid black;
             color:white;
         }
         
       
         .auto-style24 {
             text-align: left;
+            padding-left:5px;
             height: 30px;
             width: 186px;
-            border: 1px solid gray;
+           
             color: white;
         }
       
@@ -53,9 +55,9 @@
             text-align: left;
         }
         .auto-style31 {
-            width: 80px;
+            width: 96px;
             color: #FFFFFF;
-            text-align: left;
+            text-align: center;
         }
         .auto-style32 {
             width: 178px;
@@ -75,8 +77,19 @@
             text-align: left;
         }
         .auto-style11{
-            border-bottom:1px dashed gray;
+            border-bottom:1px dashed black;
         }
+        .butonTip{
+            text-decoration:none;
+            padding:5px;
+            color:aquamarine;
+            border:1px solid black;
+            
+        }
+        .butonTip:hover{
+            color:aqua;
+        }
+        
               
     </style>
 </asp:Content>
@@ -88,13 +101,13 @@
                 <div>
                     <table>
                         <tr>
-                            <td class="auto-style26" > Plaka</td>
-                            <td class="auto-style27"> Marka</td>
-                            <td class="auto-style32"> Model</td>
-                            <td class="auto-style33"> Araç Durumu</td>
-                            <td class="auto-style34"> Kiralama Başlangıç</td>
-                            <td class="auto-style29"> Kiralama Bitiş</td>
-                            <td class="auto-style31"> İşlem </td>
+                            <td class="auto-style26" > PLAKA</td>
+                            <td class="auto-style27"> MARKA</td>
+                            <td class="auto-style32"> MODEL</td>
+                            <td class="auto-style33"> ARAÇ DURUMU</td>
+                            <td class="auto-style34"> KİRALAMA BAŞLANGIÇ</td>
+                            <td class="auto-style29"> KİRALAMA BİTİŞ</td>
+                            <td class="auto-style31"> İŞLEM </td>
                         </tr>
                     </table>
             </div>
@@ -126,9 +139,9 @@
                                 <asp:Label ID="Label3" runat="server" Text='<%# Eval("kiraBit") %>'></asp:Label>
                             </td>
                             <td class="auto-style12">
-  
                                 
-                                <asp:Button ID="Button1" runat="server" Text="Kirala" />
+                                 
+                                <a href="rentStatus.aspx" class="butonTip">Kirala</a>
                             </td>
                            
                         </tr>

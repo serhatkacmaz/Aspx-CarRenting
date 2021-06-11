@@ -14,6 +14,7 @@ namespace Car_Renting
         {
 
         }
+       
 
 
         protected void btn_record_customer_Click(object sender, EventArgs e)

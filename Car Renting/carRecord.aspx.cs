@@ -35,6 +35,7 @@ namespace Car_Renting
 
         protected void btn_carRegister_Click(object sender, EventArgs e)
         {
+            
             SqlConnection sqlconnection = new SqlConnection(System.Web.Configuration.WebConfigurationManager.ConnectionStrings["MsSql"].ConnectionString);
             sqlconnection.Open();
             SqlCommand command = new SqlCommand("insert into Araba values(@t1,@t2,@t3,@t4,@t5,@t6,@t7,@t8,@t9)", sqlconnection);

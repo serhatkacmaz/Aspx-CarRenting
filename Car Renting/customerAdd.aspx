@@ -1,19 +1,30 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/User.Master" AutoEventWireup="true" CodeBehind="customerAdd.aspx.cs" Inherits="Car_Renting.customerAdd" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <script type="text/javascript">
+        function SayiGirme(degisken) {
+            degisken = (degisken) ? degisken : window.event;
+            var charCode = (degisken.which) ? degisken.which : degisken.keyCode;
+            if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+                return false;
+            }
+            return true;
+        }
+    </script>
     <style type="text/css">
         .auto-style3 {
             height: 26px;
             text-align: center;
-            margin-left: 40px;
         }
+
         .auto-style4 {
             height: 26px;
             text-align: center;
         }
+
         .auto-style5 {
             height: 26px;
             text-align: center;
-            margin-left: 80px;
         }
     </style>
 </asp:Content>
@@ -22,7 +33,7 @@
         <tr>
             <td class="auto-style4"><strong>TC</strong> </td>
             <td class="auto-style4">
-                <asp:TextBox ID="txt_identity" runat="server" MaxLength="11" ToolTip="TC kimlik Numarası Girin" Width="200px"></asp:TextBox>
+                <asp:TextBox ID="txt_identity" runat="server" MaxLength="11" ToolTip="TC kimlik Numarası Girin" Width="200px" onkeypress="return SayiGirme(event)"></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -46,7 +57,7 @@
         <tr>
             <td class="auto-style4"><strong>TELEFON</strong></td>
             <td class="auto-style3">
-                <asp:TextBox ID="txt_phone" runat="server" TextMode="Phone" ToolTip="Telefofon Numarası Girin" Width="200px" MaxLength="11"></asp:TextBox>
+                <asp:TextBox ID="txt_phone" runat="server" TextMode="Phone" ToolTip="Telefofon Numarası Girin" Width="200px" MaxLength="11" onkeypress="return SayiGirme(event)"></asp:TextBox>
             </td>
         </tr>
         <tr>
