@@ -78,18 +78,5 @@ namespace Car_Renting
 
         }
 
-        protected void btn_search_Click(object sender, EventArgs e)
-        {
-            if (txt_identity.Text.Length == 11)
-            {
-            
-            }
-            else
-            {
-                btn_Update.Enabled = false;
-                Response.Write("<script>alert('11 Haneli Girin')</script>");
-            }
-
-        }
     }
 }

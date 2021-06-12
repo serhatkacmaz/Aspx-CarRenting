@@ -33,7 +33,7 @@
             width: 269px;
         }
         .auto-style12 {
-            color: #FFCC66;
+            color:#660033;
         }
     </style>
 </asp:Content>

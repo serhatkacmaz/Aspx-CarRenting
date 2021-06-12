@@ -98,24 +98,24 @@
     <table class="auto-style1">
 
         <tr>
-            <td class="auto-style15"><strong>Plaka</strong></td>
-            <td class="auto-style18">
+            <td class="auto-style13"><strong>Plaka</strong></td>
+            <td class="auto-style6">
 
                 <asp:TextBox ID="txt_licencePlate" runat="server" Width="200px" name="plaka"></asp:TextBox>&nbsp
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator1" ControlToValidate="txt_licencePlate" runat="server" ErrorMessage="Plaka Giriniz" CssClass="auto-style19"></asp:RequiredFieldValidator>
             </td>
         </tr>
         <tr>
-            <td class="auto-style17"><strong>Marka</strong></td>
-            <td class="auto-style18">
+            <td class="auto-style13"><strong>Marka</strong></td>
+            <td class="auto-style6">
                 <asp:TextBox ID="txt_brand" runat="server" Width="200px" name="marka"></asp:TextBox>
                 &nbsp
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator2" ControlToValidate="txt_brand" runat="server" ErrorMessage="Marka Giriniz" CssClass="auto-style19"></asp:RequiredFieldValidator>
             </td>
         </tr>
         <tr>
-            <td class="auto-style12"><strong>Model</strong></td>
-            <td class="auto-style9">
+            <td class="auto-style13"><strong>Model</strong></td>
+            <td class="auto-style6">
                 <asp:TextBox ID="txt_model" runat="server" Width="200px" name="marka"></asp:TextBox>
                 &nbsp
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator3" ControlToValidate="txt_model" runat="server" ErrorMessage="Model Giriniz" CssClass="auto-style19"></asp:RequiredFieldValidator>
@@ -147,24 +147,24 @@
             </td>
         </tr>
         <tr>
-            <td class="auto-style12"><strong>Renk</strong></td>
-            <td class="auto-style9">
+            <td class="auto-style13"><strong>Renk</strong></td>
+            <td class="auto-style6">
                 <asp:TextBox ID="txt_color" runat="server" Width="200px" name="renk"></asp:TextBox>
                 &nbsp
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator4" ControlToValidate="txt_color" runat="server" ErrorMessage="Renk Giriniz" CssClass="auto-style19"></asp:RequiredFieldValidator>
             </td>
         </tr>
         <tr>
-            <td class="auto-style20"><strong>KM</strong></td>
-            <td class="auto-style21">
+            <td class="auto-style13"><strong>KM</strong></td>
+            <td class="auto-style6">
                 <asp:TextBox ID="txt_km" runat="server" Width="200px" name="renk" onkeypress="return SayiGirme(event)"></asp:TextBox>
                 &nbsp
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator5" ControlToValidate="txt_km" runat="server" ErrorMessage="Kilometre Giriniz" CssClass="auto-style19"></asp:RequiredFieldValidator>
             </td>
         </tr>
         <tr>
-            <td class="auto-style12"><strong>Yakıt</strong></td>
-            <td class="auto-style10">
+            <td class="auto-style13"><strong>Yakıt</strong></td>
+            <td class="auto-style6">
                 <asp:DropDownList ID="DropDown_fuel" runat="server" Height="16px" Width="208px" name="ucret">
                     <asp:ListItem>Dizel</asp:ListItem>
                     <asp:ListItem>Benzin</asp:ListItem>
@@ -173,8 +173,8 @@
             </td>
         </tr>
         <tr>
-            <td class="auto-style17"><strong>Kira Ücret</strong></td>
-            <td class="auto-style7">
+            <td class="auto-style13"><strong>Kira Ücret</strong></td>
+            <td class="auto-style6">
                 <asp:TextBox ID="txt_rentPrices" runat="server" Width="200px" name="ucret" onkeypress="return SayiGirme(event)"></asp:TextBox>
                 &nbsp
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator6" ControlToValidate="txt_rentPrices" runat="server" ErrorMessage="Aracın Kira Ucretini Giriniz" CssClass="auto-style19"></asp:RequiredFieldValidator>

@@ -61,7 +61,6 @@
                     <td class="auto-style7">TC ARA</td>
                     <td>
                         <asp:TextBox ID="txt_identity" runat="server" TextMode="Search" Width="200px" MaxLength="11"></asp:TextBox>
-                        <asp:Button ID="btn_search" runat="server" OnClick="btn_search_Click" Text="Ara" />
                     </td>
                 </tr>
                 <tr>
