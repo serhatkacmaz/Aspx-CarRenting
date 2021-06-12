@@ -7,12 +7,12 @@
     <title></title>
     <link href="StyleSheet.css" rel="stylesheet" />
     <style type="text/css">
-
         .auto-style10 {
             height: 20px;
             width: 694px;
             background-color: #FF9966;
         }
+
         .auto-style1 {
             width: 100%;
         }
@@ -20,35 +20,40 @@
         .auto-style7 {
             text-align: center;
         }
+
         .auto-style8 {
             height: 20px;
             width: 692px;
-            background-color: #FF9966;
         }
+
         .auto-style12 {
             height: 23px;
             text-align: center;
         }
+
         .auto-style9 {
             height: 23px;
         }
+
         .auto-style13 {
             text-align: center;
             height: 26px;
         }
+
         .auto-style14 {
             height: 26px;
         }
-        .auto-style11 {
-            text-align: left;
-            height: 30px;
+
+        .auto-style15 {
+            text-align: right;
         }
-        </style>
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
-        <div style="background-color:antiquewhite; margin-left:300px; margin-right:300px;">
-            <div class="auto-style10"><br />
+        <div style="background-color: lightgrey; margin-left: 300px; margin: 100px;">
+            <div class="auto-style8">
+                <br />
             </div>
 
             <table class="auto-style1">
@@ -60,7 +65,8 @@
                 </tr>
                 <tr>
                     <td class="auto-style7" colspan="2">
-            <div class="auto-style8">&nbsp;<br />
+                        <div class="auto-style8">
+                            &nbsp;<br />
                         </div>
 
                     </td>
@@ -96,13 +102,11 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style7">
+                    <td class="auto-style15" colspan="2">
                         <asp:Button ID="btn_Update" runat="server" Text="Güncelle" Class="" OnClick="btn_Update_Click" />
                     </td>
-                    <td>
-                        &nbsp;</td>
                 </tr>
-                </table>
+            </table>
             <br />
         </div>
     </form>

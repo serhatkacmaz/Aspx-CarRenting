@@ -1,6 +1,18 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/User.Master" AutoEventWireup="true" CodeBehind="customerDisplay.aspx.cs" Inherits="Car_Renting.customerDisplay" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+
+    <script language="JavaScript">
+
+        function pencere() {
+
+
+            window.open("customerUpdateForm.aspx", "RentaCar", "toolbar = no, location = center, directories = no, status = no, menubar = yes,scrollbars = yes, resizable = no, copyhistory = yes, width = 1200, height = 800")
+
+        }
+    </script>
+
+
     <style type="text/css">
         .auto-style5 {
             height: 23px;
@@ -92,7 +104,7 @@
                                     <asp:Label ID="Label6" runat="server" Text='<%# Eval("adres") %>'></asp:Label>
                                 </td>
                                 <td class="auto-style25">
-                                    <asp:Button ID="btn_customerUpdate" runat="server" Class="" Height="21px" OnClick="btn_customerUpdate_Click" Text="Güncelle" />
+                                    <input type="button" name="" value="Güncelle" onclick="pencere(); " />
                                 </td>
                             </tr>
 

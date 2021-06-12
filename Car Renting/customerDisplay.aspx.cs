@@ -21,9 +21,5 @@ namespace Car_Renting
             sqlconnection.Close();
         }
 
-        protected void btn_customerUpdate_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("customerUpdateForm.aspx");
-        }
     }
 }

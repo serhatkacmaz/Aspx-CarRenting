@@ -20,20 +20,9 @@ namespace Car_Renting
             SqlDataReader display = command.ExecuteReader();
             DataList1.DataSource = display;
             DataList1.DataBind();
-
-
-
-
-
-
             sqlconnection.Close();
             command.Dispose();
             sqlconnection.Dispose();
-
-
-
-
-
         }
         protected void buttonEvent(object sender, EventArgs e)
         {
@@ -42,19 +31,7 @@ namespace Car_Renting
             SqlCommand komut = new SqlCommand();
             komut.Connection = sqlconnection;
             komut.CommandText = "SELECT Barkod_No, Urun_Ad, Urun_Cins, Urun_Fiyat, Stok_Miktar, Risk_Limit, Tarih from Araba WHERE plaka = '" + xyz+ "'";
-
-
         }
-
-
-
-
-
-
-
-
-
-
 
         protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
         {
