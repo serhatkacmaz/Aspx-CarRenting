@@ -32,7 +32,8 @@ namespace Car_Renting
             txt_licenceNo.Text = "";
             txt_address.Text = "";
         }
-        private void VeriKaydet()
+
+        private void Veri_Kaydet()
         {
             SqlConnection sqlconnection = new SqlConnection(System.Web.Configuration.WebConfigurationManager.ConnectionStrings["MsSql"].ConnectionString);
             sqlconnection.Open();
@@ -56,7 +57,7 @@ namespace Car_Renting
             {
                 if (Tc_Telefon_Kontrol())
                 {
-                    VeriKaydet();
+                    Veri_Kaydet();
                     Response.Write("<script>alert('Kayıt Tamam')</script>");
                 }
                 else

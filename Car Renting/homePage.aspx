@@ -165,7 +165,7 @@
 
                                     <input type="button" name="" value="Kirala" visible='<%# (Eval("durum").ToString()=="Boşta") %>' onclick="pencere(); buttonEvent(); " />
                                     <%--<asp:Button Text="kirala" runat="server" Visible='<%# (Eval("durum").ToString()=="Boşta") %>' OnClick="pencere()" />--%>
-                                    <asp:Button Text="teslim al" runat="server" Visible='<%# (Eval("durum").ToString()!="Boşta") %>' />
+                                    <asp:Button Text="teslim al" runat="server" Visible='<%# (Eval("durum").ToString()!="Boşta") %>' OnClick="Unnamed1_Click" />
 
 
 

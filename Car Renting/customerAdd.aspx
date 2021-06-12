@@ -42,7 +42,7 @@
         <tr>
             <td class="auto-style9"><strong>TC</strong> </td>
             <td class="auto-style11">
-                <asp:TextBox ID="txt_identity" runat="server" MaxLength="11" ToolTip="TC kimlik Numarası Girin" Width="200px" onkeypress="return SayiGirme(event)"></asp:TextBox>
+                <asp:TextBox ID="txt_identity" runat="server" MaxLength="11" ToolTip="TC kimlik Numarası Girin" Width="242px" onkeypress="return SayiGirme(event)"></asp:TextBox>
             </td>
             <td class="auto-style4">
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="TC Girilmedi" ControlToValidate="txt_identity" CssClass="auto-style12"></asp:RequiredFieldValidator>
@@ -51,7 +51,7 @@
         <tr>
             <td class="auto-style9"><strong>AD</strong></td>
             <td class="auto-style11">
-                <asp:TextBox ID="txt_name" runat="server" ToolTip="Ad Girin" Width="200px"></asp:TextBox>
+                <asp:TextBox ID="txt_name" runat="server" ToolTip="Ad Girin" Width="242px"></asp:TextBox>
             </td>
             <td class="auto-style4">
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Ad Girilmedi" ControlToValidate="txt_name" CssClass="auto-style12"></asp:RequiredFieldValidator>
@@ -60,7 +60,7 @@
         <tr>
             <td class="auto-style9"><strong>SOYAD</strong></td>
             <td class="auto-style11">
-                <asp:TextBox ID="txt_surname" runat="server" ToolTip="Soyad Girin" Width="200px"></asp:TextBox>
+                <asp:TextBox ID="txt_surname" runat="server" ToolTip="Soyad Girin" Width="242px"></asp:TextBox>
             </td>
             <td class="auto-style4">
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="Soyad Girilmedi" ControlToValidate="txt_surname" CssClass="auto-style12"></asp:RequiredFieldValidator>
@@ -77,7 +77,7 @@
         <tr>
             <td class="auto-style9"><strong>TELEFON</strong></td>
             <td class="auto-style11">
-                <asp:TextBox ID="txt_phone" runat="server" TextMode="Phone" ToolTip="Telefofon Numarası Girin" Width="200px" MaxLength="11" onkeypress="return SayiGirme(event)"></asp:TextBox>
+                <asp:TextBox ID="txt_phone" runat="server" TextMode="Phone" ToolTip="Telefofon Numarası Girin" Width="242px" MaxLength="11" onkeypress="return SayiGirme(event)"></asp:TextBox>
             </td>
             <td class="auto-style4">
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ErrorMessage="Telefon Girilmedi" ControlToValidate="txt_phone" CssClass="auto-style12"></asp:RequiredFieldValidator>
@@ -86,7 +86,7 @@
         <tr>
             <td class="auto-style9"><strong>E-MAİL</strong></td>
             <td class="auto-style11">
-                <asp:TextBox ID="txt_mail" runat="server" TextMode="Email" ToolTip="Email Adresi Girin" Width="200px"></asp:TextBox>
+                <asp:TextBox ID="txt_mail" runat="server" TextMode="Email" ToolTip="Email Adresi Girin" Width="242px"></asp:TextBox>
             </td>
             <td class="auto-style4">
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ErrorMessage="Mail Girilmedi" ControlToValidate="txt_mail" CssClass="auto-style12"></asp:RequiredFieldValidator>
@@ -95,7 +95,7 @@
         <tr>
             <td class="auto-style9"><strong>EHLİYET BELGE NO</strong></td>
             <td class="auto-style11">
-                <asp:TextBox ID="txt_licenceNo" runat="server" Width="200px" MaxLength="6"></asp:TextBox>
+                <asp:TextBox ID="txt_licenceNo" runat="server" Width="242px" MaxLength="6"></asp:TextBox>
             </td>
             <td class="auto-style4">
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ErrorMessage="Belge No Girilmedi" ControlToValidate="txt_licenceNo" CssClass="auto-style12"></asp:RequiredFieldValidator>
@@ -104,7 +104,7 @@
         <tr>
             <td class="auto-style9"><strong>ADRES</strong></td>
             <td class="auto-style11">
-                <asp:TextBox ID="txt_address" runat="server" Height="99px" TextMode="MultiLine" ToolTip="Adres Girin" Width="204px"></asp:TextBox>
+                <asp:TextBox ID="txt_address" runat="server" Height="99px" TextMode="MultiLine" ToolTip="Adres Girin" Width="242px"></asp:TextBox>
             </td>
             <td class="auto-style4">
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ErrorMessage="Adres Girilmedi" ControlToValidate="txt_address" CssClass="auto-style12"></asp:RequiredFieldValidator>

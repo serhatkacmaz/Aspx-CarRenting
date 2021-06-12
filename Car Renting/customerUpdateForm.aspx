@@ -6,13 +6,9 @@
 <head runat="server">
     <title></title>
     <link href="StyleSheet.css" rel="stylesheet" />
-    <style type="text/css">
-        .auto-style10 {
-            height: 20px;
-            width: 694px;
-            background-color: #FF9966;
-        }
 
+    <style type="text/css">
+        
         .auto-style1 {
             width: 100%;
         }
@@ -47,7 +43,11 @@
         .auto-style15 {
             text-align: right;
         }
+        .auto-style21 {
+            color: #FF3300;
+        }
     </style>
+
 </head>
 <body>
     <form id="form1" runat="server">
@@ -60,7 +60,8 @@
                 <tr>
                     <td class="auto-style7">TC ARA</td>
                     <td>
-                        <asp:TextBox ID="text_identity" runat="server" TextMode="Search" Width="200px"></asp:TextBox>
+                        <asp:TextBox ID="txt_identity" runat="server" TextMode="Search" Width="200px" MaxLength="11"></asp:TextBox>
+                        <asp:Button ID="btn_search" runat="server" OnClick="btn_search_Click" Text="Ara" />
                     </td>
                 </tr>
                 <tr>
@@ -75,30 +76,35 @@
                     <td class="auto-style7">AD</td>
                     <td>
                         <asp:TextBox ID="txt_name" runat="server" Width="200px"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txt_name" CssClass="auto-style21" ErrorMessage="Ad Giriniz"></asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
                     <td class="auto-style12">SOYAD</td>
                     <td class="auto-style9">
                         <asp:TextBox ID="txt_surname" runat="server" Width="200px"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txt_surname" CssClass="auto-style21" ErrorMessage="Soyad Giriniz"></asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
                     <td class="auto-style13">TELEFON</td>
                     <td class="auto-style14">
-                        <asp:TextBox ID="txt_phone" runat="server" Width="200px"></asp:TextBox>
+                        <asp:TextBox ID="txt_phone" runat="server" Width="200px" MaxLength="11"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txt_phone" CssClass="auto-style21" ErrorMessage="Telefon Giriniz"></asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style7">E MAİL</td>
-                    <td>
-                        <asp:TextBox ID="txt_email" runat="server" TextMode="Email" Width="200px"></asp:TextBox>
+                    <td class="auto-style13">E MAİL</td>
+                    <td class="auto-style14">
+                        <asp:TextBox ID="txt_mail" runat="server" TextMode="Email" Width="200px"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txt_mail" CssClass="auto-style21" ErrorMessage="Mail Giriniz"></asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
                     <td class="auto-style7">ADRES</td>
                     <td>
                         <asp:TextBox ID="txt_address" runat="server" Height="98px" TextMode="MultiLine" Width="203px"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="txt_address" CssClass="auto-style21" ErrorMessage="Adres Giriniz"></asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
