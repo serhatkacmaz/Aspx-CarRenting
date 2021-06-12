@@ -7,7 +7,7 @@
         function pencere() {
 
 
-            window.open("rentStatus.aspx" ,"RentaCar", "toolbar = no, location = no, directories = no, status = no, menubar = yes,scrollbars = yes, resizable = no, copyhistory = yes, width = 1200, height = 800")
+            window.open("rentStatus.aspx", "RentaCar", "toolbar = no, location = no, directories = no, status = no, menubar = yes,scrollbars = yes, resizable = no, copyhistory = yes, width = 1200, height = 800")
 
         }
     </script>
@@ -137,7 +137,8 @@
         </tr>
         <tr>
             <td class="auto-style6">
-                <asp:DataList ID="DataList1" runat="server" Width="1191px">
+                <asp:DataList ID="DataList1" runat="server" Width="1191px" 
+                    OnSelectedIndexChanged="DataList1_SelectedIndexChanged">
                     <ItemTemplate>
                         <table class="auto-style11">
                             <tr>
@@ -162,7 +163,7 @@
                                 </td>
                                 <td class="auto-style12">
 
-                                    <input type="button" name="" value="Kirala" visible='<%# (Eval("durum").ToString()=="Boşta") %>' OnClick="pencere()"/>
+                                    <input type="button" name="" value="Kirala" visible='<%# (Eval("durum").ToString()=="Boşta") %>' onclick="pencere(); buttonEvent(); " />
                                     <%--<asp:Button Text="kirala" runat="server" Visible='<%# (Eval("durum").ToString()=="Boşta") %>' OnClick="pencere()" />--%>
                                     <asp:Button Text="teslim al" runat="server" Visible='<%# (Eval("durum").ToString()!="Boşta") %>' />
 
