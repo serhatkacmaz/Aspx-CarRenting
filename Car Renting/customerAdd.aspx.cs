@@ -14,10 +14,25 @@ namespace Car_Renting
         {
 
         }
-       
 
+        private bool Tc_Telefon_Kontrol()
+        {
+            if (txt_identity.Text.Length == 11 && txt_phone.Text.Length == 11)
+                return true;
+            return false;
+        }
 
-        protected void btn_record_customer_Click(object sender, EventArgs e)
+        private void Textbox_Clear()
+        {
+            txt_identity.Text = "";
+            txt_name.Text = "";
+            txt_surname.Text = "";
+            txt_phone.Text = "";
+            txt_mail.Text = "";
+            txt_licenceNo.Text = "";
+            txt_address.Text = "";
+        }
+        private void VeriKaydet()
         {
             SqlConnection sqlconnection = new SqlConnection(System.Web.Configuration.WebConfigurationManager.ConnectionStrings["MsSql"].ConnectionString);
             sqlconnection.Open();
@@ -32,8 +47,27 @@ namespace Car_Renting
             command.Parameters.AddWithValue("@t8", txt_address.Text);
             command.ExecuteNonQuery();
             sqlconnection.Close();
+            Textbox_Clear();
+        }
 
-            Response.Write("Kayıt Eklendi.");
+        protected void btn_record_customer_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (Tc_Telefon_Kontrol())
+                {
+                    VeriKaydet();
+                    Response.Write("<script>alert('Kayıt Tamam')</script>");
+                }
+                else
+                    Response.Write("<script>alert('Bilgiler Yanlış Girildi')</script>");
+            }
+            catch (Exception)
+            {
+                Response.Write("<script>alert('TC Kimlik Numaralı Kayıt Bulunmaktadır.')</script>");
+                Textbox_Clear();
+            }
+
         }
     }
 }

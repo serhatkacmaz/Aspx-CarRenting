@@ -6,9 +6,7 @@
 
         function pencere() {
 
-
             window.open("customerUpdateForm.aspx", "RentaCar", "toolbar = no, location = center, directories = no, status = no, menubar = yes,scrollbars = yes, resizable = no, copyhistory = yes, width = 1200, height = 500")
-
         }
     </script>
 
