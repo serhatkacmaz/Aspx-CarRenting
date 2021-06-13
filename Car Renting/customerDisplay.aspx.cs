@@ -26,5 +26,9 @@ namespace Car_Renting
             Musteri_Listele();
         }
 
+        protected void button_Duzenle_Event(object sender, EventArgs e)
+        {
+            Response.Redirect("customerUpdateform.aspx?tc=" + ((Label)DataList1.Items[1].FindControl("Label1")).Text);
+        }
     }
 }

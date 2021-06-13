@@ -12,6 +12,22 @@ namespace Car_Renting
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            SqlConnection sqlconnection = new SqlConnection(System.Web.Configuration.WebConfigurationManager.ConnectionStrings["MsSql"].ConnectionString);
+            SqlCommand command = new SqlCommand("SELECT * FROM Musteri WHERE tc='" + Request["tc"].ToString() + "'", sqlconnection);
+            sqlconnection.Open();
+            SqlDataReader display = command.ExecuteReader();
+            if (display.Read())
+            {
+                txt_identity.Text = display["tc"].ToString();   
+                txt_name.Text = display["ad"].ToString();
+                txt_surname.Text = display["soyad"].ToString();
+                txt_phone.Text = display["telefon"].ToString();
+                txt_mail.Text = display["mail"].ToString();
+                txt_address.Text = display["adres"].ToString();
+            }
+
+            command.Dispose();
+            sqlconnection.Dispose();
 
         }
 
@@ -64,7 +80,7 @@ namespace Car_Renting
                     if (reader.Read())
                     {
                         Veri_Guncelle();
-                        Response.Write("<script>alert('Güncelleme Tamam')</script>");
+                        Response.Redirect("customerDisplay.aspx");
                     }
                     sqlconnection.Close();
                 }

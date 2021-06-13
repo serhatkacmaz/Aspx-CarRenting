@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/User.Master" AutoEventWireup="true" CodeBehind="customerDisplay.aspx.cs" Inherits="Car_Renting.customerDisplay" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/User.Master" AutoEventWireup="true" CodeBehind="customerDisplay.aspx.cs" Inherits="Car_Renting.customerDisplay" EnableEventValidation="false" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
@@ -102,7 +102,7 @@
                                     <asp:Label ID="Label6" runat="server" Text='<%# Eval("adres") %>'></asp:Label>
                                 </td>
                                 <td class="auto-style25">
-                                    <input type="button" name="" value="Güncelle" onclick="pencere(); " />
+                                    <asp:Button Text="Düzenle" runat="server" onclick="button_Duzenle_Event" />
                                 </td>
                             </tr>
 
