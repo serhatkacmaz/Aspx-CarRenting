@@ -7,7 +7,7 @@
         function pencere() {
 
 
-            window.open("rentStatus.aspx", "RentaCar", "toolbar = no, location = no, directories = no, status = no, menubar = yes,scrollbars = yes, resizable = no, copyhistory = yes, width = 1200, height = 800")
+            window.open("rentStatus.aspx", "RentaCar", "toolbar = no, location = no, directories = no, status = no, menubar = yes,scrollbars = yes, resizable = no, copyhistory = yes, width = 1300, height = 800")
 
         }
     </script>
@@ -20,7 +20,7 @@
         }
 
         .auto-style6 {
-            width: 1218px;
+            width: 1200px;
         }
 
         .auto-style12 {
@@ -162,8 +162,9 @@
                                     <asp:Label ID="Label3" runat="server" Text='<%# Eval("kiraBit") %>'></asp:Label>
                                 </td>
                                 <td class="auto-style12">
-
-                                    <input type="button" name="" value="Kirala" visible='<%# (Eval("durum").ToString()=="Boşta") %>' onclick="pencere(); buttonEvent(); " />
+                                    <asp:Button Text="Kirala" runat="server" visible='<%# (Eval("durum").ToString()=="Boşta") %>' onclick="buttonEvent" />
+                                        
+                                    <%--<input type="button" name="" value="" visible='<%# (Eval("durum").ToString()=="Boşta") %>' onclick="buttonEvent" />--%>
                                     <%--<asp:Button Text="kirala" runat="server" Visible='<%# (Eval("durum").ToString()=="Boşta") %>' OnClick="pencere()" />--%>
                                     <asp:Button Text="teslim al" runat="server" Visible='<%# (Eval("durum").ToString()!="Boşta") %>' OnClick="Unnamed1_Click" />
 

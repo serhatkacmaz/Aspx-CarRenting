@@ -10,7 +10,7 @@ namespace Car_Renting
 {
     public partial class homePage : System.Web.UI.Page
     {
-
+        
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -26,11 +26,8 @@ namespace Car_Renting
         }
         protected void buttonEvent(object sender, EventArgs e)
         {
-            rentStatus xyz = new rentStatus();
-            SqlConnection sqlconnection = new SqlConnection(System.Web.Configuration.WebConfigurationManager.ConnectionStrings["MsSql"].ConnectionString);
-            SqlCommand komut = new SqlCommand();
-            komut.Connection = sqlconnection;
-            komut.CommandText = "SELECT Barkod_No, Urun_Ad, Urun_Cins, Urun_Fiyat, Stok_Miktar, Risk_Limit, Tarih from Araba WHERE plaka = '" + xyz+ "'";
+            
+            Response.Redirect("rentStatus.aspx?plaka="+ ((Label)DataList1.Items[1].FindControl("Label1")).Text);
         }
 
         protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
